@@ -10,11 +10,10 @@ body {
   font-family: "Hind Madurai", sans-serif !important;
 } */
 
-
-html, body {
+html,
+body {
   height: 100%;
 }
-
 
 /* font cdn */
 /* Hind-madurai font */
@@ -38,12 +37,14 @@ html, body {
   font-family: "Inter", sans-serif !important;
 }
 
-
-
 @media (max-width: 768px) {
-  html, body { overflow-x: hidden; }
+  /* Safety: kill horizontal scroll caused by negative translates etc. */
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-   nav {
+  nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +60,8 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem; /* space between text and buttons */
+  }
 
   /* Buttons container below text */
   nav > div:last-child {
@@ -68,7 +70,7 @@ html, body {
     gap: 0.5rem;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem; /* space between buttons and banner */
   }
 
   /* Individual buttons */
@@ -78,12 +80,7 @@ html, body {
     text-align: center;
   }
 
-
-
-
-
-
-  /* 2) MAIN LAYOUT */
+  /* 2) MAIN LAYOUT: two columns → one column */
   .bg-\[\#F5FFF6\].flex.justify-between {
     flex-direction: column !important;
     align-items: stretch !important;
@@ -91,7 +88,7 @@ html, body {
     min-height: auto !important;
   }
 
-  /* 3) CARDS GRID:  */
+  /* 3) CARDS GRID: single column, remove the left margin from container */
   .grid.grid-cols-3 {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
@@ -108,12 +105,12 @@ html, body {
     margin-inline: auto !important;
   }
 
-
+  /* Fix the heart’s negative translate so it doesn’t clip on small screens */
   .card .translate-x-\[\-20px\] {
     transform: none !important;
   }
 
-  
+  /* Stack "Copy" and "Call" buttons vertically inside each card */
   .card div.flex.gap-2.mt-5 {
     flex-direction: column !important;
     gap: 0.5rem !important;
@@ -123,14 +120,14 @@ html, body {
     justify-content: center !important;
   }
 
-  /* 5) CALL HISTORY PANEL:  */
+  /* 5) CALL HISTORY PANEL: make it full-width and not capped by max-height */
   .bg-white.p-5.mr-9.mt-12.shadow-md.rounded-xl.max-h-\[1234px\] {
     margin: 0.75rem !important;
     max-height: none !important;
     width: auto !important;
   }
 
-  
+  /* Call history rows: remove fixed 390px width */
   #call-history-container .form {
     width: 100% !important;
     margin-left: 0 !important;
@@ -142,10 +139,19 @@ html, body {
     text-align: center !important;
     padding-inline: 0.75rem;
   }
-  .bg-gradient-to-r .text-4xl { font-size: 1.75rem !important; line-height: 2.1rem !important; }
-  .bg-gradient-to-r .text-xl  { font-size: 1rem !important;   line-height: 1.5rem !important; }
+  .bg-gradient-to-r .text-4xl {
+    font-size: 1.75rem !important;
+    line-height: 2.1rem !important;
+  }
+  .bg-gradient-to-r .text-xl {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
 
   /* 7) IMAGES: scale down safely */
-  img { max-width: 100%; height: auto; display: block; }
-}
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
