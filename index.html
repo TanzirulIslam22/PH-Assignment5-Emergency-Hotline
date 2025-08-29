@@ -10,23 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- daisyUI cdn-->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
   <!-- tailwind cdn -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body class="">
-  <!--* navbar -->
+  <!-- nav section -->
   <nav class="min-h-[100px]">
     <div class="flex items-center justify-between p-5">
       <div class="flex space-x-4">
@@ -51,7 +46,7 @@
     </div>
   </nav>
 
-  <!--* banner -->
+  <!-- banner section -->
   <div
     class="flex flex-col min- h-[245px] w-full justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
     <img src="assets/logo-dark.png" class="h-[93px] w-[93px]" />
@@ -63,18 +58,16 @@
     </p>
   </div>
 
-  <!--* cards and call history -->
+  <!-- cards and call history -->
   <div class="bg-[#F5FFF6]  flex justify-between min-h-[145vh] ">
-    <!-- all container -->
-    <!--*all cards container -->
+    <!--cards container -->
     <div class="max-w-[1370px] pt-12 ml-9 p-3 grid grid-cols-3 gap-x-8 gap-y-2 justify-items-center ">
-      <!--! National emergency helpline -->
+      <!-- National emergency helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/emergency.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart "></i>
           </div>
@@ -102,7 +95,6 @@
 
           <button id="national-emergency"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -113,13 +105,12 @@
         </div>
       </div>
 
-      <!--! Police Helpline  -->
+      <!-- Police Helpline  -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#DFEFFF] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/police.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -147,7 +138,6 @@
 
           <button id="police"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -157,13 +147,12 @@
           </button>
         </div>
       </div>
-      <!-- !Fire Service -->
+      <!-- Fire Service -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/fire-service.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -189,7 +178,6 @@
 
           <button id="fireCall"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -199,13 +187,12 @@
           </button>
         </div>
       </div>
-      <!-- !Ambulance Service -->
+      <!-- Ambulance Service -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/ambulance.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -231,7 +218,6 @@
 
           <button id="Ambulance"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -241,13 +227,12 @@
           </button>
         </div>
       </div>
-      <!-- !Women and child Helpline -->
+      <!-- Women and child Helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/emergency.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -277,7 +262,6 @@
 
           <button id="womenChild"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -287,13 +271,12 @@
           </button>
         </div>
       </div>
-      <!-- !Anti-corruption Helpline -->
+      <!--Anti-corruption Helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/emergency.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -321,7 +304,6 @@
 
           <button id="corruption"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -331,13 +313,12 @@
           </button>
         </div>
       </div>
-      <!-- !Electricity Helpline -->
+      <!-- Electricity Helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/emergency.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -365,7 +346,6 @@
 
           <button id="Electricity"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -375,13 +355,12 @@
           </button>
         </div>
       </div>
-      <!-- !Brac Helpline -->
+      <!-- Brac Helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/brac.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -391,7 +370,6 @@
           <p class="text-[#111111] font-bold text-2xl ">Brac Helpline</p>
           <p class="text-[#5c5c5c] font-normal text-lg srvc-name">Brac</p>
         </div>
-
         <div class="">
           <p class="text-[#111111] font-bold text-3xl pl-1 srvc-num">16445</p>
           <button class="btn btn-sm text-[#5c5c5c] rounded-full px-4 py-1.5 bg-[#f2f2f2] border-0 text-lg font-normal">
@@ -407,7 +385,6 @@
 
           <button id="Brac"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -417,13 +394,12 @@
           </button>
         </div>
       </div>
-      <!-- !Railway Helpline -->
+      <!-- Railway Helpline -->
       <div class="h-[387px] w-[420px] bg-white shadow-md rounded-xl p-5 pl-7 card">
         <div class="flex items-center justify-between space-x-2">
           <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
             <img class="h-[35px] w-[35px]" src="assets/Bangladesh-Railway.png" />
           </div>
-          <!-- Wrap heart in a div and move slightly left -->
           <div class="translate-x-[-20px]">
             <i class="fa-regular fa-heart h-[65px] w-[50px] mt-10 text-gray-500 text-2xl self-center heart"></i>
           </div>
@@ -451,7 +427,6 @@
 
           <button id="Railway"
             class="btn btn-soft h-[40px] w-[165px] bg-[#00a63e] text-white flex items-center justify-center gap-2 rounded-lg font-normal call-btn">
-            <!-- Hollow phone SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="white" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
               <path
@@ -567,7 +542,6 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
