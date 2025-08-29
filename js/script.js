@@ -1,4 +1,4 @@
-//? Heart Increase
+// Heart Increase
 const heartIcons = document.getElementsByClassName("heart");
 const heartCount = document.getElementById("heart-count");
 
@@ -11,7 +11,7 @@ for (let i = 0; i < heartIcons.length; i++) {
   });
 }
 
-//? Call Button
+// Call Button
 const callHistoryContainer = document.querySelector("#call-history-container");
 
 const clearHistoryBtn = document.querySelector("#clear-history-btn");
@@ -110,8 +110,6 @@ document.getElementById("Brac").addEventListener("click", () => {
 document.getElementById("Railway").addEventListener("click", () => {
   handleToggle("rail");
 });
-
-// clear history btn
 
 document.getElementById("clear-history-btn").addEventListener("click", (e) => {
   const cards = document.querySelectorAll("#call-history-container .form");
