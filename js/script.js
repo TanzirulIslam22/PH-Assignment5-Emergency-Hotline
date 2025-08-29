@@ -29,12 +29,10 @@ document.querySelectorAll(".call-btn").forEach((btn) => {
       return;
     }
 
-    // find service info (name & number) from this card
     const card = btn.closest(".card");
     const serviceName = card.querySelector(".srvc-name").textContent.trim();
     const serviceNumber = card.querySelector(".srvc-num").textContent.trim();
 
-    // show alert
     alert(`📞 Calling ${serviceName} Service at ${serviceNumber}...`);
 
     coins -= 20;
@@ -42,7 +40,7 @@ document.querySelectorAll(".call-btn").forEach((btn) => {
   });
 });
 
-// Copy
+// Copy section
 const copyNum = document.getElementById("copyCount");
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
