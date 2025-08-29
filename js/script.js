@@ -42,7 +42,7 @@ document.querySelectorAll(".call-btn").forEach((btn) => {
   });
 });
 
-//? Copy
+// Copy
 const copyNum = document.getElementById("copyCount");
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
@@ -62,7 +62,6 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
 });
 
 // call history section
-
 function handleToggle(id) {
   const forms = document.getElementsByClassName("form");
   document.getElementById(id).style.display = "block";

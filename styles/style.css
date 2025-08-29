@@ -1,4 +1,3 @@
-/* font cdns */
 /* Hind-madurai font */
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
 
@@ -25,7 +24,7 @@ body {
   height: 100%;
 }
 
-/* mobile responsive */
+/* responsive mobile version */
 @media (max-width: 768px) {
   html,
   body {
